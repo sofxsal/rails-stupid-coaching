@@ -1,8 +1,5 @@
-<%= @answer = params[:question] %>
-  <% if @answer == "I am going to work" %>
-    <p>Great!</p>
-  <% elsif @answer.include?("?")%>
-    <p>Silly question, get dressed and go to work!</p>
-  <% else %>
-    <p>I don't care, get dressed and go to work!</p>
-  <% end %>
+<h1>Stupid Coaching</h1>
+<p><em>You:</em> <%= @question %></p>
+<p><em>Coach:</em> <%= @answer %></p>
+<br>
+<%= link_to "Ask a new question", ask_path %>
